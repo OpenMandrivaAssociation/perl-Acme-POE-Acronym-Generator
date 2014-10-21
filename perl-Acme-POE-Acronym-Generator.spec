@@ -1,9 +1,9 @@
 %define upstream_name    Acme-POE-Acronym-Generator
-%define upstream_version 1.18
+%define upstream_version 1.20
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	4
+Release:	1
 
 Summary:	Generate random POE acronyms
 License:	GPL+ or Artistic
@@ -41,17 +41,3 @@ POE acronym ( or at your option any other arbitary word ).
 %doc Changes README LICENSE
 %{_mandir}/man3/*
 %{perl_vendorlib}/*
-
-
-%changelog
-* Mon Apr 18 2011 Funda Wang <fwang@mandriva.org> 1.180.0-2mdv2011.0
-+ Revision: 654834
-- rebuild for updated spec-helper
-
-* Thu Dec 03 2009 Jérôme Quelin <jquelin@mandriva.org> 1.180.0-1mdv2011.0
-+ Revision: 472984
-- import perl-Acme-POE-Acronym-Generator
-
-
-* Thu Dec 03 2009 cpan2dist 1.18-1mdv
-- initial mdv release, generated with cpan2dist
